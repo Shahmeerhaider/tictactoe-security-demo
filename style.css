@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0a0a1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    color: white;
+}
+
+.app {
+    text-align: center;
+}
+
+.menu, .game {
+    background: #1a1a2e;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 20px #00ffff;
+    width: 300px;
+}
+
+h1 {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+    margin: 0 0 20px;
+}
+
+.group p {
+    margin: 5px;
+    color: #00ff9d;
+}
+
+.mark-select {
+    margin: 20px 0;
+}
+
+.mark-select button {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    margin: 5px;
+    border: 2px solid #00ffff;
+    background: transparent;
+    color: #00ffff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.mark-select button.active {
+    border-color: #ff00ff;
+    color: #ff00ff;
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+.mode {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.mode { 
+    border-color: #ff00ff;
+     color: #ff00ff;
+      background: transparent; }
+.mode.alt {
+     border-color: #00ffff;
+      color: #00ffff;
+       background: transparent; }
+
+.hidden { 
+    display: none; }
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    background: #16213e;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+    color: #00ffff;
+}
+
+.score {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.scorebox {
+    background: #16213e;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #00ff9d;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1a1a2e;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #ff00ff;
+    box-shadow: 0 0 30px #ff00ff;
+    z-index: 1000;
+}
+
+.popup-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.popup-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #00ffff;
+    color: black;
+}
+
+.device-info {
+    margin-top: 20px;
+    padding: 10px;
+    background: #16213e;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: left;
+}
