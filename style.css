@@ -30,7 +30,7 @@ h1 {
 
 .group p {
     margin: 5px;
-    color: #00ff9d;
+    color: #05ffff;
 }
 
 .mark-select {
@@ -110,7 +110,7 @@ h1 {
     background: #16213e;
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #00ff9d;
+    border: 1px solid #13f7fb;
 }
 
 .popup {
